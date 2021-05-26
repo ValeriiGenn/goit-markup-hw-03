@@ -8,6 +8,13 @@
   --button-text-color: #212121;
   --contact-color: rgba(255, 255, 255, 0.6);
 }
+.container{width: 1230px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 2px solid tomato;}
+
+*,*::before,*::after{box-sizing: inherit;}
 body {
   background-color: #ffffff;
   color: var(--black-color);
