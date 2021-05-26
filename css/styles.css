@@ -20,7 +20,14 @@ body {
   color: var(--black-color);
   font-family: Roboto, Raleway;
 }
+.page-header{
+  margin: 0;
+  padding: 0;
+  width: 1230px;
+min-height: 91px;}
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   color: var(--button-text-color);
 
@@ -79,17 +86,31 @@ body {
 /*hero*/
 .hero {
   background-color: var(--hero-color);
+  text-align: center;
 }
 .hero .title {
-  color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 176px 440.4px 0px 440.4px;
+
+    color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
+   text-transform: uppercase;
 }
 .hero .link {
+ margin-top: 31px;
+ margin-right: 697px;
+ margin-bottom: 217px;
+ margin-left: 697px;
+ display: inline-block;
+ border-radius: 4.13px;
+ padding: 10.33px 33.7px;
+ min-width: 206.67px;
+ min-height: 51.67px;
+ border: 1px solid transparent;
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
@@ -97,6 +118,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
 }
 /*section*/
 .section-title {
