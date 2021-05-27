@@ -200,6 +200,16 @@ body {
   list-style: none;
 }
 .portfolio button {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0px;
+  min-width: 73px;
+  min-height: 38px;
+  border: 1px solid rebeccapurple;
   font: inherit;
   background-color: var(--button-color);
   color: var(--button-text-color);
@@ -220,6 +230,8 @@ body {
 /*портфоліо */
 
 .signature {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--button-text-color);
 
   font-weight: bold;
@@ -228,6 +240,8 @@ body {
   letter-spacing: 0.06em;
 }
 .info {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--gray-color);
 
   font-size: 16px;
