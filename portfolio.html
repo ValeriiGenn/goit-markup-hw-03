@@ -23,23 +23,10 @@
   </head>
 
   <body>
-    <div class="test-container">
-      <div class="flex-container">
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-        <div class="flex-element"></div>
-      </div>
-    </div>
     <!--шапка-->
-    <header>
-      <div class="container main-nav">
-        <nav>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
           <a class="logo link" href="./index.html"
             ><span class="first">Web</span>Studio</a
           >
@@ -65,22 +52,24 @@
 
     <main>
       <h1 class="transparent">Портфолио</h1>
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="transparent">КНОПКИ</h2>
-          <ul class="portfolio">
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+          <ul class="portfolio filter">
+            <li class="item"><button type="button">Все</button></li>
+            <li class="item"><button type="button">Веб-сайты</button></li>
+            <li class="item"><button type="button">Приложения</button></li>
+            <li class="item"><button type="button">Дизайн</button></li>
+            <li class="item"><button type="button">Маркетинг</button></li>
           </ul>
         </div>
       </section>
       <section class="container">
+        <div class="test-container">
         <ul class="list">
+          <div class="flex-container">
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href=""
                 ><img
                   src="./images/img.P1.jpg"
@@ -93,7 +82,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img
                   src="./images/img.P2.jpg"
@@ -106,7 +95,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img
                   src="./images/img.P3.jpg"
@@ -119,7 +108,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img
                   src="./images/img.P4.jpg"
@@ -132,7 +121,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img
                   src="./images/img.P5.jpg"
@@ -145,7 +134,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img
                   src="./images/img.P6.jpg"
@@ -158,7 +147,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img src="./images/img.P7.jpg" alt="фото глянцю" width="370" />
                 <h3 class="signature">Издание Limited Edition</h3>
@@ -167,7 +156,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img src="./images/img.P8.jpg" alt="бирка" width="370" />
                 <h3 class="signature">Проект LAB</h3>
@@ -176,7 +165,7 @@
             </div>
           </li>
           <li>
-            <div class="container">
+            <div class="flex-element">
               <a href="">
                 <img src="./images/img.P9.jpg" alt="фото нетбука" width="370" />
                 <h3 class="signature">Growing Business</h3>
@@ -185,7 +174,9 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
+    </div>
     </main>
     <!--підвал-->
     <footer class="footer">
