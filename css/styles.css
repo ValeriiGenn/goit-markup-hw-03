@@ -54,28 +54,40 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+/*.header .header{
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;*/
+}
 .header .container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav {
   display: flex;
-  align-items: center;
+  align-items: center;background-color: red;
 }
 
 .logo.link {
   display: inline-block;
+  min-width: 145;
+  min-height: 31;
 }
 .nav .logo {
   margin-right: 93px;
 }
 .logo {
   display: inline-block;
-  /* min-width: 145;
-  min-height: 31;*/
-  margin-top: 0;
-  margin-bottom: 0;
+  min-width: 145;
+  min-height: 31;
+  margin: 24px 93px 25px 215px;
+  
   color: var(--black-color);
   font-family: Raleway;
   font-weight: bold;
@@ -94,10 +106,13 @@ body {
 /*site nav*/
 .site-nav {
   display: flex;
-  align-items: center;
+  align-items: center;background-color:green;
 }
 .site-nav .item:not(:last-child) {
-  margin: 50px;
+  margin-top: 32px;
+  margin-right: 50px;
+  margin-bottom: 32px;
+
 }
 .site-nav .link {
   display: block;
@@ -121,11 +136,14 @@ body {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  align-items: center;
+  align-items: center;background-color: indigo;
 }
 .auth-nav .item + .item {
-  margin-left: 50px;
+  margin-top: 32px;
+  margin-left: 30px;
+  margin-bottom: 32px;
 }
+.auth-nav:last-child {margin-right: 0;}
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -201,13 +219,14 @@ body {
   text-align: center;
   background-color: lightcoral;
 }
-.sectitle{display: block;}
+sectitle{display: table-cell;
+    align-self:flex-start;}
 .section {
   display: flex;
   padding-top: 84px;
   padding-bottom: 94px;
 }
-.section.no-padding {
+.no-padding {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -241,7 +260,7 @@ body {
 }
 
 /*наша команда*/
-.tetext{display: block;}
+
 .container .section-title {
   display: block;
   align-items: center;
@@ -269,7 +288,11 @@ body {
   letter-spacing: 0.03em;
 }
 /*кнопки*/
-.portfolio {
+section .portfolio {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
   display: flex;
   align-items: center;
   list-style: none;
@@ -304,6 +327,16 @@ body {
 .portfolio button:focus {
   background-color: var(--accent-color);
 }
+.portfolio .filtr {
+  margin-top: 21px;
+  margin-right: 8px;
+  margin-bottom: 13px;
+  align-items:center;
+  justify-content: center;
+ }
+ .portfolio .filtr:first-child {
+   margin-left: auto;
+  }
 /*портфоліо */
 .test-container {background-color: rosybrown;
   display: flex;
@@ -382,6 +415,11 @@ body {
 
 /*footer*/
 .footer {
+  display: flex;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-color);
