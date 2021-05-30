@@ -15,7 +15,6 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
   align-items: center;
 }
 h1,
@@ -32,6 +31,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*h2 {margin-right: auto;
+margin-left: auto;}*/
+/*html {box-sizing: border-box;}*/
 *,
 *::before,
 *::after {
@@ -54,11 +56,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-/*.header .header{
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;*/
+
 }
 .header .container {
   width: 1230px;
@@ -71,7 +69,7 @@ body {
 }
 .nav {
   display: flex;
-  align-items: center;background-color: red;
+  align-items: center;
 }
 
 .logo.link {
@@ -106,7 +104,7 @@ body {
 /*site nav*/
 .site-nav {
   display: flex;
-  align-items: center;background-color:green;
+  align-items: center;
 }
 .site-nav .item:not(:last-child) {
   margin-top: 32px;
@@ -136,7 +134,7 @@ body {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  align-items: center;background-color: indigo;
+  align-items: center;
 }
 .auth-nav .item + .item {
   margin-top: 32px;
@@ -160,14 +158,11 @@ body {
 }
 /*hero*/
 .hero {display: block;
-/*padding-bottom: 217.33px;*/
-  /*display: flex;*/
+   
   background-color: var(--hero-color);
   text-align: center;
 }
-/*.container .hero {
-  padding-bottom: 170px;
-}*/
+
 .hero .title {
   margin-top: 0;
   margin-bottom: 31px;
@@ -201,8 +196,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-  /*display: flex;*/
-  align-items: center;
+    align-items: center;
 }
 /*section*/
 .section-title {
@@ -210,19 +204,18 @@ body {
   align-items: center;
   margin-top: 0;
   margin-bottom: 50;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--black-color);
 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
-  background-color: lightcoral;
-}
-sectitle{display: table-cell;
-    align-self:flex-start;}
+  text-align: center;}
+  
 .section {
-  display: flex;
+   display: flex;
   padding-top: 84px;
   padding-bottom: 94px;
 }
@@ -233,13 +226,14 @@ sectitle{display: table-cell;
 .section .title {
   margin-top: 0;
   margin-bottom: 10;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--black-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  background-color: lightseagreen;
-}
+ }
 /*чим ми займаємося*/
 .features .list .title {
   margin-top: 0;
@@ -309,7 +303,7 @@ section .portfolio {
   padding: 0px;
   min-width: 73px;
   min-height: 38px;
-  border: 1px solid red;
+ 
   font: inherit;
   background-color: var(--button-color);
   color: var(--button-text-color);
@@ -338,7 +332,7 @@ section .portfolio {
    margin-left: auto;
   }
 /*портфоліо */
-.test-container {background-color: rosybrown;
+.test-container {
   display: flex;
   align-items: center;
   width: 1230px;
@@ -347,7 +341,7 @@ section .portfolio {
   margin-left: auto;
   margin-right: auto;
 }
-.flex-container {outline: 1px solid rgb(97, 53, 45);
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -355,7 +349,7 @@ section .portfolio {
   margin-left: calc(-1 * var(--flex-container-gap));
 }
 .flex-element {
-  outline: 1px solid green;
+  
   display: flex;
   width: 380px;
   margin-right: 30px;
