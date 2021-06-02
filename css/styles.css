@@ -3,10 +3,11 @@
   --button-color: #f5f4fa;
   --black-color: #212121;
   --gray-color: #757575;
-  --accent-color: #2169f3;
+  --accent-color: #2196f3;
   --hero-color: rgba(47, 48, 58, 1);
   --button-text-color: #212121;
   --contact-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #2196f3;
 }
 body {
   background-color: #ffffff;
@@ -33,9 +34,21 @@ h2,
 h3,
 p,
 a,
-button {
+button,
+ul,
+li,
+address {
   margin-top: 0;
   margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+p,
+a,
+button,
+ul {
+  outline: 1px solid yellow;
 }
 a,
 img {
@@ -44,6 +57,8 @@ img {
 .head-container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .site-nav {
   display: flex;
@@ -77,8 +92,8 @@ img {
 /*site nav*/
 
 .site-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px;*/
   color: var(--button-text-color);
 
   font-family: Roboto;
@@ -106,7 +121,7 @@ img {
 }
 /*hero*/
 .hero-section {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   display: block;
   padding-top: 200px;
@@ -152,7 +167,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.benefits {
+.section-benefits {
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -167,13 +182,17 @@ img {
 .benefits-list-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.section-title {
+.section-title-team,
+.section-title-directions {
   color: var(--black-color);
 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  /*padding-bottom: 50px;
+  margin: 0;*/
+  margin-bottom: 50px;
 }
 .section .title {
   color: var(--black-color);
@@ -199,14 +218,14 @@ img {
   line-height: 1.7;
 }
 /*чим ми займаємося*/
-.directions {
+.section-directions {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 .directions .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
+  /*margin-top: -30px;*/
 }
 .directions-list-item:not(:last-child) {
   margin-right: 30px;
@@ -214,19 +233,20 @@ img {
 .directions-list-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.section-title .directions {
-  margin-bottom: 50px;
+.section-title-team,
+.section-title-directions {
+  margin-bottom: 0 50px 0;
 }
 
 /*наша команда*/
-.team {
+.team-section {
   padding-bottom: 94px;
 }
 .team .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  padding-right: -30px;
+  /*margin-top: -30px;
+  padding-right: -30px;*/
 }
 
 .team-list-item:not(:last-child) {
@@ -234,10 +254,16 @@ img {
 }
 .team-list-item {
   flex-basis: calc((100% - 90px) / 4);
-  display: block;
+  /*display: ;*/
+  background-color: var(--button-color);
 }
 .section-title .team {
   margin-bottom: 50px;
+}
+.container-team-list-item {
+  padding-top: 30px;
+  padding-right: auto;
+  padding-left: auto;
 }
 .team-list-item-title {
   color: var(--black-color);
@@ -246,6 +272,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-list-item-text {
   color: var(--gray-color);
@@ -266,13 +293,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-list-item {
+.button-filter-list-item {
   border-radius: 5px;
   padding: 0px;
   min-width: 73px;
@@ -288,8 +315,8 @@ img {
   border: 0;
   cursor: pointer;
 }
-.filter-list-item :hover,
-.filter-list-item :focus {
+.button-filter-list-item :hover,
+.button-filter-list-item :focus {
   background-color: var(--accent-color);
 }
 /*портфоліо */
@@ -334,8 +361,9 @@ img {
 .footer {
   background-color: var(--hero-color);
   color: var(--white-color);
+  padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   align-content: center;
 }
@@ -357,9 +385,6 @@ img {
 .third:hover,
 .third:focus {
   color: var(--accent-color);
-}
-.address-list {
-  padding-top: 60px;
 }
 .second {
   margin-top: 20px;
