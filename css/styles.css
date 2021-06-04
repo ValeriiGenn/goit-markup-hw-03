@@ -45,11 +45,14 @@ a,
 img {
   display: block;
 }
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px;
+}
 .head-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .site-nav {
   display: flex;
@@ -264,22 +267,21 @@ img {
   letter-spacing: 0.03em;
 }
 /*кнопки*/
-.filter {
-  width: 1200px;
+
+.container-button {
   padding-bottom: 50px;
 }
 .filter-list {
-  width: 1200px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.filter-list-item:not(:last-child) {
+.btn:not(:last-child) {
   margin-right: 8px;
 }
 
-.button .filter-list-item {
+.button {
   border-radius: 5px;
   padding: 6px 22px;
   font: inherit;
@@ -292,20 +294,20 @@ img {
   border: 0;
   cursor: pointer;
 }
-.button .filter-list-item :hover,
-.button .filter-list-item :focus {
+.button .filter-list :hover,
+.button .filter-list:focus {
   background-color: var(--accent-color);
 }
 /*портфоліо */
-.section-portfolio {
+
+.portfolio {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 188px;
-  margin-top: 30px;
-  /*margin-right: -30px;*/
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio .list {
   list-style: none;
@@ -315,6 +317,7 @@ img {
   margin-left: -30px;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .container-portfolio-list-item {
   padding: 20px 24px;
@@ -323,7 +326,6 @@ img {
 }
 .portfolio.list > .portfolio-list-item {
   flex-basis: calc((100% -60px) / 3 - 30px);
-  display: block;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -357,12 +359,12 @@ img {
   color: var(--white-color);
   text-decoration: none;
   font-style: normal;
-  margin-bottom: 20px;
 }
 .second {
   color: var(--white-color);
   text-decoration: none;
   font-style: normal;
+  margin-top: 20px;
 }
 .third {
   color: var(--contact-color);
@@ -373,11 +375,9 @@ img {
 .third:focus {
   color: var(--accent-color);
 }
-/*.second {
-  
-}*/
+
 .address.list {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .address-list-tel {
   margin-top: 9px;
