@@ -48,7 +48,7 @@ img {
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px;
+  border-bottom: 1px solid #ececec;
 }
 .head-container {
   display: flex;
@@ -165,7 +165,7 @@ img {
 .benefits .list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
+  /* margin-top: -30px;*/
 }
 .benefits-list-item:not(:last-child) {
   margin-right: 30px;
@@ -228,6 +228,7 @@ img {
 
 /*наша команда*/
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--button-color);
 }
@@ -276,6 +277,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .btn:not(:last-child) {
   margin-right: 8px;
@@ -317,14 +319,13 @@ img {
   margin-left: -30px;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 .container-portfolio-list-item {
   padding: 20px 24px;
   border: 0 70px 322px 70px;
   border: 1px solid var(--border-color);
 }
-.portfolio.list > .portfolio-list-item {
+.portfolio-list-item {
   flex-basis: calc((100% -60px) / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -355,6 +356,10 @@ img {
   margin: 0 auto;
   align-content: center;
 }
+
+.address-list {
+  margin-top: 20px;
+}
 .address {
   color: var(--white-color);
   text-decoration: none;
@@ -364,7 +369,6 @@ img {
   color: var(--white-color);
   text-decoration: none;
   font-style: normal;
-  margin-top: 20px;
 }
 .third {
   color: var(--contact-color);
@@ -381,4 +385,7 @@ img {
 }
 .address-list-tel {
   margin-top: 9px;
+}
+.link-address {
+  margin: 0;
 }
